@@ -61,7 +61,7 @@ const items = [
 function Body(){
    return <section className={classes.content}>
       {items.map(article=>{
-         return <Card>
+         return <Card key={article.title}>
            <CardItem title={article.title} 
            content={article.content}
            username={article.username}

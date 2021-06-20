@@ -1,13 +1,14 @@
 import classes from "./header.module.css"
+import {Link} from "react-router-dom"
 function Header(){
     return (
         <header className={classes.header}>
             <div className={classes.logo}></div> 
             <nav className={classes.nav}>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </nav>  
         </header>

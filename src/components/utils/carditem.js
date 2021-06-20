@@ -1,13 +1,16 @@
 // import Card from "./card";
 import classes from "./carditem.module.css"
 import Progress from "./progess"
-import {Fragment} from "react"
+import {Fragment, useState} from "react"
 
 
 function CardItem({title, content, date, username, prog}){
+    const [progress, setprogress] = useState(prog)
+    
     function handleClick(e){
-      e.target.parentNode.querySelector("progress").value += 10;
+        setprogress(progress-10+20)
     }
+
     return (
         <Fragment>
             <div className={classes.header}>
@@ -15,7 +18,7 @@ function CardItem({title, content, date, username, prog}){
             </div>
             <div className={classes.content}>
                 <p>{content}</p>
-            <Progress value={prog} />
+            <Progress value={progress} />
             </div>
             <button className={classes.btn} onClick={handleClick}>Lire</button>
             <hr/>

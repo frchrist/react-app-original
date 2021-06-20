@@ -1,0 +1,45 @@
+.title{
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: brown;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgba(165, 42, 42, 0.644);
+    }
+}
+
+.header{
+    height: 200px;
+    background: url("logo512.png") no-repeat center center/contain;
+    position: relative;
+
+    h2{
+        position: absolute;
+        top: 50%;
+        text-align: center;
+     
+
+    }
+   
+  }
+.content{
+    margin: 10px 0;
+}
+
+.username{
+    font-size: 1rem;
+    color: firebrick;
+    float: right;
+}
+.date{
+    opacity: 0.8;
+    float: left;
+}

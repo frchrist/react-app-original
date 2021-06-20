@@ -1,17 +1,16 @@
-import Backdrop from "./components/Backdrop";
-import Modal from "./components/Modal";
-import Todo from "./components/Todo";
+import react from "react"
+import Footer from "./components/Layout/footer";
+import Header from "./components/Layout/header";
+import Body from "./components/Layout/body";
 
 //this is entry point for react application
 function App() {
   return (
-    <div>
-      <h1>My Todos</h1>
-      <Todo title="Python django" />
-      <Todo title="Payeer api learn" />
-  
-      <Todo title="Learn coinbase api for python programming" />
-    </div>
+    <react.Fragment>
+      <Header/>
+      <Body/>
+      <Footer/>
+    </react.Fragment>
   );
 }
 

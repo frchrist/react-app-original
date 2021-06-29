@@ -1,14 +1,15 @@
 // import Card from "./card";
 import classes from "./carditem.module.css"
-import {Fragment, useState} from "react"
+import Progress from "./progess"
+import {Fragment} from "react"
 import {useHistory} from "react-router-dom"
 
 
 function CardItem({title, content, date, username, prog, read}){
-    const [progress, setprogress] = useState(prog)
+
     let history = useHistory()
     
-    function handleClick(e){
+    function handleClick(){
         history.push(read)
     }
 
@@ -19,7 +20,7 @@ function CardItem({title, content, date, username, prog, read}){
             </div>
             <div className={classes.content}>
                 <p>{content}</p>
-            <Progress value={progress} />
+            <Progress value={prog} />
             </div>
             <button className={classes.btn} onClick={handleClick}>Lire</button>
             <hr/>

@@ -1,0 +1,31 @@
+.head h2{
+    font-size: 1.4rem;
+    color: rgba(165, 42, 42, 0.616);
+}
+.section{
+    width: 80%;
+    margin: 10px auto;
+    background: #fff;
+    padding: 20px;
+}
+.author{
+    color: brown;
+    margin-left: 20px;
+    font-size: 1rem;
+   
+}
+.section address {
+    display: inline;
+    margin-top: 20px;
+}
+
+.content{
+    line-height: 1.6;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.content p{
+    font-size: 1.9rem;
+    color: rgba(0, 0, 0, 0.671);
+}

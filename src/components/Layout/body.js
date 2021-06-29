@@ -1,6 +1,7 @@
 import classes from "./body.module.css"
 import Card from "../utils/card"
 import CardItem from "../utils/carditem";
+
 const items = [
 
    {
@@ -59,21 +60,32 @@ const items = [
    },
 ]
 function Body(){
-   return <section className={classes.content}>
-      {items.map(article=>{
-         return <Card key={article.title}>
-           <CardItem title={article.title} 
-           content={article.content}
-           username={article.username}
-           date={article.date}
-           prog={article.prog}
-           />
-        </Card>
-      })}
-      
-        
-        
-    </section> 
+   document.title = "Bienvenue sur Mon application react"
+  
+   
+      let id = 1;
+      // console.log(posts)
+      return <section className={classes.content}>
+       
+         {items.map(article=>{
+            let url = "detail/"+id
+            id++
+            return <Card key={article.title}>
+            <CardItem title={article.title} 
+            content={article.body}
+            username={article.userId}
+            date={article.id}
+            prog={article.prog}
+            read={url}
+            />
+         </Card>
+         })}
+         
+         
+         
+      </section> 
+   
+  
 }
 
 export default Body;

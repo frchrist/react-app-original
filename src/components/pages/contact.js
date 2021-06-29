@@ -19,7 +19,7 @@ function Contact(){
                 return <button type="button" onClick={increaseStep}>Suivant</button>
            }else if(stepForm === 4){
             return <button type="button" onClick={increaseStep}>Envoyer</button>
-           }else if(stepForm ===)5){
+           }else if(stepForm ===5){
             return <button type="submit" onClick={increaseStep} className={classes.hidden}>Envoyer</button>
            }
            else{

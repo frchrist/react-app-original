@@ -5,6 +5,8 @@ import Body from "./components/Layout/body";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import Contact from "./components/pages/contact";
 import About from "./components/pages/about";
+import Detail from "./components/pages/detail";
+
 import Error404 from "./components/pages/404";
 //this is entry point for react application
 function App() {
@@ -18,6 +20,7 @@ function App() {
         <Route path='/home' component={Body} exact/>
         <Route path='/contact' component={Contact}/>
         <Route path='/about' component={About}/>
+        <Route path='/detail/:slug' component={()=>{return <Detail />}}/>
         <Route path="/" component={Error404} />
       </Switch>
       <Footer/>

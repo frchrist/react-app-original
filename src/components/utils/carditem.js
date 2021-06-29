@@ -2,13 +2,15 @@
 import classes from "./carditem.module.css"
 import Progress from "./progess"
 import {Fragment, useState} from "react"
+import {useHistory} from "react-router-dom"
 
 
-function CardItem({title, content, date, username, prog}){
+function CardItem({title, content, date, username, prog, read}){
     const [progress, setprogress] = useState(prog)
+    let history = useHistory()
     
     function handleClick(e){
-        setprogress(progress-10+20)
+        history.push(read)
     }
 
     return (

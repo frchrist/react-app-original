@@ -1,0 +1,6 @@
+.mixed{
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 10px auto;
+}
